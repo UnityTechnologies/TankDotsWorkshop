@@ -40,8 +40,23 @@
           <e p="1 - Spawning" t="Include">
             <e p="Scripts" t="Include">
               <e p="EnemySpawnerECS.cs" t="Include" />
-              <e p="TankBulletBehaviourECS.cs" t="Include" />
               <e p="TankShooterECS.cs" t="Include" />
+            </e>
+          </e>
+          <e p="2 - Movement" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="MoveForwardAuthoring.cs" t="Include" />
+              <e p="MoveForwardComponent.cs" t="Include" />
+              <e p="MoveForwardSystem.cs" t="Include" />
+              <e p="MoveSpeedAuthoring.cs" t="Include" />
+              <e p="MoveSpeedComponent.cs" t="Include" />
+            </e>
+          </e>
+          <e p="3 - Rotating to Target" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="EnemyTagAuthoring.cs" t="Include" />
+              <e p="EnemyTagComponent.cs" t="Include" />
+              <e p="TurnTowardsPlayerSystem.cs" t="Include" />
             </e>
           </e>
         </e>

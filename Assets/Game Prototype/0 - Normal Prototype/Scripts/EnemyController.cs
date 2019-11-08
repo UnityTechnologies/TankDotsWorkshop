@@ -72,6 +72,7 @@ namespace Workshop.TankGame
         {
             if (!m_FollowPlayer)
                 return;
+            
             //Rotate to target
             Vector3 heading = GameSettings.Instance.PlayerPosition - m_Transform.position;
             heading.y = 0f;

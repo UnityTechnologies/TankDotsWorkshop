@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="956bad57-d46d-461f-a314-569265695d07" name="Default Changelist" comment="" />
@@ -12,10 +12,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/TankShooterECS.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/GameSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankBulletBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/HealthCubeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemJobs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemJobs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemForEach.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/EnemySpawnerECS.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -48,9 +61,17 @@
         <option value="$PROJECT_DIR$/Assets/1 - Spawning/Scripts/TankBulletBehaviourECS.cs" />
         <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/PlayerUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/HealthCubeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/GameSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagComponent.cs" />
       </list>
     </option>
   </component>
@@ -102,6 +123,7 @@
       <updated>1573216989904</updated>
       <workItem from="1573216995497" duration="5437000" />
       <workItem from="1573232631981" duration="1821000" />
+      <workItem from="1573235510809" duration="5870000" />
     </task>
     <servers />
   </component>
