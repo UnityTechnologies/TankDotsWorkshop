@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\UNITY TECH\Projects - Kikuchi\My DOTS Workshop\My DOTS Workshop" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="0 - Fundamentals" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="CubeMove.cs" t="Include" />
+            <e p="CubeRotate.cs" t="Include" />
+            <e p="MovementSystemBurst.cs" t="Include" />
+            <e p="MovementSystemForEach.cs" t="Include" />
+            <e p="MovementSystemJobs.cs" t="Include" />
+            <e p="MovementVelocity.cs" t="Include" />
+            <e p="MovementVelocityAuthoring.cs" t="Include" />
+            <e p="RotationSystemBurst.cs" t="Include" />
+            <e p="RotationSystemForEach.cs" t="Include" />
+            <e p="RotationSystemJobs.cs" t="Include" />
+            <e p="RotationVelocity.cs" t="Include" />
+            <e p="RotationVelocityAuthoring.cs" t="Include" />
+            <e p="SpawnEcsObjects.cs" t="Include" />
+            <e p="SpawnMonoObjects.cs" t="Include" />
+          </e>
+        </e>
+        <e p="0 - Normal Prototype" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BulletImpactPool.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="EnemySpawner.cs" t="Include" />
+            <e p="GameSettings.cs" t="Include" />
+            <e p="LookAtCamera.cs" t="Include" />
+            <e p="PlayerUi.cs" t="Include" />
+            <e p="TankBulletBehaviour.cs" t="Include" />
+            <e p="TankController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="99 - Ecs Prototype finished" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="TankControllerWithEcs.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Unity Assets" t="Include">
+          <e p="Tank Assets" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Bowlby_One" t="Include">
+                <e p="FontLicense.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Tanks!_Third-PartyNotice.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="My DOTS Workshop.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\aleco\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\aleco\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_My DOTS Workshop.641851232.00" t="ExcludeRecursive" />
+  </component>
+</project>
