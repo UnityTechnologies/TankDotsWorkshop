@@ -18,7 +18,8 @@ namespace Workshop.TankGame
 
         // =============================================================================================================
         /// <summary>
-        /// Our conversion method for ECS.
+        /// This function will be called when the ECS system decides to convert this GameObject to an equivalent ECS...
+        /// ...Entity, allowing us to add the component this MonoBehaviour represents.
         /// </summary>
         /// <param name="entity">Entity to be created for us.</param>
         /// <param name="dstManager">Our entity manager to work with ECS.</param>

@@ -43,7 +43,12 @@
               <e p="TankShooterECS.cs" t="Include" />
             </e>
           </e>
-          <e p="10 - EXTRAS" t="Include">
+          <e p="10 - Implementations" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CollisionSystemGame.cs" t="Include" />
+            </e>
+          </e>
+          <e p="11 - EXTRAS" t="Include">
             <e p="Scripts" t="Include">
               <e p="CollisionSystemChunks.cs" t="Include" />
             </e>

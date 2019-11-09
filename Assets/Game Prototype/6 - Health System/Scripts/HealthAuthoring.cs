@@ -7,6 +7,7 @@ namespace Workshop.TankGame
     [RequiresEntityConversion]
     public class HealthAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     {
+        [Tooltip("Health amount before dying")]
         public float healthAmount = 100;
 
         // =============================================================================================================

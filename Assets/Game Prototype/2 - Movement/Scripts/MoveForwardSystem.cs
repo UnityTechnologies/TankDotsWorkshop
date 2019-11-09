@@ -10,7 +10,8 @@ namespace Workshop.TankGame
 {
 	/// <summary>
 	/// JobComponentSystem enable us to create jobs with Job System.
-	/// Turning this into a JobComponentSystem will make Unity to split our job in different threads for us, faster.
+	/// Turning this into a JobComponentSystem will make Unity to split our job in different threads for us, it is faster.
+	/// Job Components are not exposed into the Editor.
 	/// </summary>
 	public class MoveForwardSystem : JobComponentSystem
 	{
@@ -21,14 +22,15 @@ namespace Workshop.TankGame
 		/// And our query says "find everything that has a Translation, Rotation and MoveSpeed".
 		/// Also see that we ask for a tag to run it, otherwise other entities with the same data (translation...
 		/// rotation and MoveSpeed) could also be executed by our query, because it does not know what is what.
-		/// Note: we already added BurstCompile.
-		/// Note 2: you can't access Unity normal components and MonoBehaviours from here.
+		/// Note: we already added BurstCompile, this is all you need to make Burst Compile to work ;)
+		/// Note 2: you can't access Unity normal components and MonoBehaviours in here.
 		/// </summary>
 		[BurstCompile]
 		[RequireComponentTag(typeof(MoveForwardTag))] //this is a way to identify what entities we want to run this query.
-		struct MoveForwardRotation : IJobForEach<Translation, Rotation, MoveSpeed>
+		private struct MoveForwardRotation : IJobForEach<Translation, Rotation, MoveSpeed>
 		{
 			public float myDeltaTime;
+			
 			/// <summary>
 			/// Each entity that has these data, will be executed by our query.
 			/// It will happen for each data.

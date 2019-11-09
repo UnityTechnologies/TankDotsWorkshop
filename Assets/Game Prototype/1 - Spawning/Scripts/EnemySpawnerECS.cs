@@ -22,17 +22,10 @@ namespace Workshop.TankGame
         //Cache
         private float m_Cooldown;
         
-        private EntityManager m_Manager;
-        private Entity m_EnemyEntityPrefab;
-
         // =============================================================================================================
         private void Start()
         {
-            if (useECS)
-            {
-                m_Manager = World.Active.EntityManager;
-                m_EnemyEntityPrefab = GameObjectConversionUtility.ConvertGameObjectHierarchy(enemyPrefab, World.Active);
-            }
+            PrepareEcsEnemy();
         }
         // =============================================================================================================
         private void Update()
@@ -63,12 +56,42 @@ namespace Workshop.TankGame
                 }
                 else
                 {
-                    //Here we spawn the enemy and set the position, called Translation on ECS.
-                    Entity enemy = m_Manager.Instantiate(m_EnemyEntityPrefab);
-                    m_Manager.SetComponentData(enemy, new Translation { Value = pos });
+                    SpawnEnemyECS(pos);
                 }
             }
         }
         // =============================================================================================================
+        
+        #region ECS
+        
+        private EntityManager m_Manager;
+        private Entity m_EnemyEntityPrefab;
+        
+        // =============================================================================================================
+        /// <summary>
+        /// If we will use ECS to spawn enemies, let's setup it first. Call this before calling anything
+        /// related to our ECS stuff. Usually on Start.
+        /// </summary>
+        private void PrepareEcsEnemy()
+        {
+            if (useECS)
+            {
+                m_Manager = World.Active.EntityManager;
+                m_EnemyEntityPrefab = GameObjectConversionUtility.ConvertGameObjectHierarchy(enemyPrefab, World.Active);
+            }
+        }
+        // =============================================================================================================
+        /// <summary>
+        /// Spawn an enemy using ECS.
+        /// </summary>
+        private void SpawnEnemyECS(Vector3 pos)
+        {
+            //Here we spawn the enemy and set the position, called Translation on ECS.
+            Entity enemy = m_Manager.Instantiate(m_EnemyEntityPrefab);
+            m_Manager.SetComponentData(enemy, new Translation { Value = pos });
+        }
+        // =============================================================================================================
+        
+        #endregion
     }
 }

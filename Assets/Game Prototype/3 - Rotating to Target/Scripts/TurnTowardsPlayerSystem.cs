@@ -8,7 +8,7 @@ using Unity.Transforms;
 namespace Workshop.TankGame
 {
 	/// <summary>
-	/// REMEMBER: besides the name here, it is actually "turn to something" system, player is just the name.
+	/// REMEMBER: besides the name here, it is actually "turn to something" system, player is just the name we gave.
 	/// We are using the "Player" in the name below just to be easier to understand in our game.
 	/// A Job Component System does not know what is a player, unless we explicit tell it so.
 	/// </summary>
@@ -47,17 +47,23 @@ namespace Workshop.TankGame
 		protected override JobHandle OnUpdate(JobHandle inputDeps)
 		{
 			//We can access MonoBehaviour here, as you can see.
-			if (GameSettings.Instance.IsPlayerDead)
-				return inputDeps;
+			//Enable this when in Exercise 3 for our tank game, so we dont get errors before that.
+//			if (GameSettings.Instance.IsPlayerDead)
+//				return inputDeps;
 
 			//Create a new Job, set a value that our query needs and execute what we want.
-			var job = new TurnJob
-			{
-				playerPosition = GameSettings.Instance.PlayerPosition
-			};
-			
+			//Enable this when in Exercise 3 for our tank game, so we dont get errors before that.
+//			var job = new TurnJob
+//			{
+//				playerPosition = GameSettings.Instance.PlayerPosition
+//			};
+
+			//Enable this when in Exercise 3 for our tank game, so we dont get errors before that.
 			//Add to our job schedule and we are set.
-			return job.Schedule(this, inputDeps);
+//			return job.Schedule(this, inputDeps);
+
+			//ERASE THE LINE BELOW when in Exercise 5 for our tank game and enable all lines above.
+			return inputDeps;
 		}
 		// =============================================================================================================
 	}

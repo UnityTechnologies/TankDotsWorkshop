@@ -11,8 +11,9 @@ namespace Workshop.TankGame
 		// =============================================================================================================
 		protected override void OnUpdate()
 		{
-			if (GameSettings.Instance.IsPlayerDead)
-				return;
+			//Enable this when in Exercise 5 for our tank game, so we dont get errors before that.
+//			if (GameSettings.Instance.IsPlayerDead)
+//				return;
 			
 			//Set our ECS position the same as our GO position
 			Entities.WithAll<PlayerTag>().ForEach((ref Translation pos) =>

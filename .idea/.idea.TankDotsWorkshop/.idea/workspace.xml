@@ -16,9 +16,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTagComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankBulletBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionSystemGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTransformUpdateSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - EXTRAS/Scripts/CollisionSystemChunks.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/8 - Enemies Damage/Scripts/CollisionSystemTwoQueries.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/RemoveDeadSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemForEach.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemBurst.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementVelocity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemJobs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimeToLiveAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,10 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/0 - Fundamentals/Scripts/SpawnMonoObjects.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Fundamentals/Scripts/MovementSystemJobs.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Fundamentals/Scripts/MovementSystemBurst.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Fundamentals/Scripts/CubeRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/0 - Fundamentals/Scripts/CubeMove.cs" />
         <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/LookAtCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/GameSettings.cs" />
@@ -74,36 +71,40 @@
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/HealthCubeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagAuthoring.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemJobs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/TankShooterECS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemForEach.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimeToLiveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimeToLiveAuthoring.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/EnemySpawnerECS.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/HealthComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/HealthAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/RemoveDeadSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTagComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTagAuthoring.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTransformUpdateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/BulletImpactPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemForEach.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/RemoveDeadSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimedDestroySystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/7 - Player Damage/Scripts/CollisionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/GameSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/8 - Enemies Damage/Scripts/CollisionSystemTwoQueries.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/9 - Shell Bullet Damage/Scripts/CollisionSystemFinal.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - EXTRAS/Scripts/CollisionSystemChunks.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/9 - Shell Bullet Damage/Scripts/CollisionSystemFinal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionSystemGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemBurst.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTransformUpdateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemJobs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemForEach.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/GameSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/TankShooterECS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/EnemySpawnerECS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementVelocityAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationVelocityAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" />
       </list>
     </option>
   </component>
@@ -157,6 +158,7 @@
       <workItem from="1573232631981" duration="1821000" />
       <workItem from="1573235510809" duration="5870000" />
       <workItem from="1573255047388" duration="13781000" />
+      <workItem from="1573305980975" duration="6305000" />
     </task>
     <servers />
   </component>

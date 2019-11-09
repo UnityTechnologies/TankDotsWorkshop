@@ -16,8 +16,14 @@ namespace Workshop.Fundamentals
         //We expose this in the editor just to configure the actual ECS component we will create later.
         public float rotationVelocity;
 
-        //This function will be called when the ECS system decides to convert this GameObject to an equivalent ECS...
-        //...Entity, allowing us to add the component this MonoBehaviour represents.
+        // =============================================================================================================
+        /// <summary>
+        /// This function will be called when the ECS system decides to convert this GameObject to an equivalent ECS...
+        /// ...Entity, allowing us to add the component this MonoBehaviour represents.
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="dstManager"></param>
+        /// <param name="conversionSystem"></param>
         public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {
             //First create the actual component and setup its data based on exposed properties.
@@ -28,5 +34,6 @@ namespace Workshop.Fundamentals
             //Tell the entity manager that this Component belongs to the entity we are converting.
             dstManager.AddComponentData(entity, rotationComponent);
         }
+        // =============================================================================================================
     }
 }

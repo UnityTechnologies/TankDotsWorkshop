@@ -152,7 +152,7 @@ namespace Workshop.TankGame
         // =============================================================================================================
         /// <summary>
         /// If we will use ECS to spawn bullets or shells, let's setup it first. Call this before calling anything
-        /// related to our ECS stuff.
+        /// related to our ECS stuff. Usually on Start.
         /// </summary>
         private void PrepareEcsBullet()
         {

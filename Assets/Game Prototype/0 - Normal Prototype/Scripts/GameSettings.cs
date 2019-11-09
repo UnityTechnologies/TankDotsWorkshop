@@ -144,9 +144,9 @@ namespace Workshop.TankGame
         
         [Header("DATA FOR ECS ONLY")]
         [Tooltip("Our enemy radius to be used in our custom Collision system. Will be used for ECS only.")]
-        [SerializeField] private float enemyCollisionRadius = .5f;
+        [SerializeField] private float enemyCollisionRadius = .7f;
         [Tooltip("Our player radius to be used in our custom Collision system. Will be used for ECS only.")]
-        [SerializeField] private float playerCollisionRadius = .2f;
+        [SerializeField] private float playerCollisionRadius = .5f;
         
         // =============================================================================================================
         /// <summary>
