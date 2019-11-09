@@ -22,8 +22,6 @@ namespace Workshop.TankGame
         [Header("GAME SETUP")]
         [Tooltip("My game score.")]
         [SerializeField] private int playerScore;
-        [Tooltip("How many enemies should we spawn, per second.")]
-        [SerializeField] private int enemiesToSpawn = 10;
         [Tooltip("Amount of points to add to your score per enemy killed.")]
         [SerializeField] private int scorePerEnemy = 1;
         
@@ -50,23 +48,6 @@ namespace Workshop.TankGame
         public static Action onPlayerDied;
         
         // =============================================================================================================
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
-        // =============================================================================================================
-        private void Start()
-        {
-            playerScore = 0;
-            uiScoreText.text = playerScore.ToString();
-            m_PlayerCurrentLife = playerMaxLife;
-        }
-        // =============================================================================================================
         /// <summary>
         /// Max health of our player.
         /// </summary>
@@ -87,6 +68,23 @@ namespace Workshop.TankGame
         /// </summary>
         public Vector3 PlayerPosition => playerTransform.position;
         // =============================================================================================================
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+        }
+        // =============================================================================================================
+        private void Start()
+        {
+            playerScore = 0;
+            uiScoreText.text = playerScore.ToString();
+            m_PlayerCurrentLife = playerMaxLife;
+        }
+        // =============================================================================================================
         /// <summary>
         /// Call it when the player takes a damage from an enemy or something.
         /// Also can be used to restore Health.
@@ -105,8 +103,17 @@ namespace Workshop.TankGame
             //If player dies, lets warn all scripts that needs it.
             if (m_PlayerCurrentLife <= 0)
             {
-                onPlayerDied?.Invoke();
+                PlayerDied();
             }
+        }
+        // =============================================================================================================
+        /// <summary>
+        /// Kills our player and lets everyone know it.
+        /// </summary>
+        public void PlayerDied()
+        {
+            m_PlayerCurrentLife = 0;
+            onPlayerDied?.Invoke();
         }
         // =============================================================================================================
         /// <summary>
@@ -132,6 +139,29 @@ namespace Workshop.TankGame
             uiScoreText.text = playerScore.ToString();
         }
         // =============================================================================================================
+        
+        #region FOR ECS LATER
+        
+        [Header("DATA FOR ECS ONLY")]
+        [Tooltip("Our enemy radius to be used in our custom Collision system. Will be used for ECS only.")]
+        [SerializeField] private float enemyCollisionRadius = .5f;
+        [Tooltip("Our player radius to be used in our custom Collision system. Will be used for ECS only.")]
+        [SerializeField] private float playerCollisionRadius = .2f;
+        
+        // =============================================================================================================
+        /// <summary>
+        /// Get our collision radius for our enemies.
+        /// </summary>
+        public float EnemyCollisionRadius => enemyCollisionRadius;
+        // =============================================================================================================
+        /// <summary>
+        /// Get our collision radius for our player.
+        /// </summary>
+        public float PlayerCollisionRadius => playerCollisionRadius;
+        // =============================================================================================================
+
+        #endregion
+
     }
 
 }

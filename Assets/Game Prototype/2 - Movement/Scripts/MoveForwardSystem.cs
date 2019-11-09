@@ -39,9 +39,8 @@ namespace Workshop.TankGame
 			public void Execute(ref Translation pos, [ReadOnly] ref Rotation rot, [ReadOnly] ref MoveSpeed speed)
 			{
 				//We can't use Time.deltaTime here, since it only be called from the main thread.
-				//That's what our job will do for us. If you do, even if you don't get a compile error, it will crash
-				//during runtime.
-				pos.Value = pos.Value + (myDeltaTime * speed.speedValue * math.forward(rot.Value));
+				//If you do, even if you don't get a compile error here, it will crash during runtime.
+				pos.Value += (myDeltaTime * speed.speedValue * math.forward(rot.Value));
 			}
 		}
 		// =============================================================================================================
@@ -52,11 +51,13 @@ namespace Workshop.TankGame
 		/// <returns></returns>
 		protected override JobHandle OnUpdate(JobHandle inputDeps)
 		{
+			//Create a new Job, set a value that our query needs and execute what we want.
 			var moveForwardRotationJob = new MoveForwardRotation
 			{
 				myDeltaTime = Time.deltaTime
 			};
 
+			//Add to our job schedule and we are set.
 			return moveForwardRotationJob.Schedule(this, inputDeps);
 		}
 		// =============================================================================================================

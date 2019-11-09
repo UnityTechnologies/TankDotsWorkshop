@@ -25,7 +25,7 @@ namespace Workshop.Fundamentals
         }
         // =============================================================================================================
         /// <summary>
-        /// This will be executed in all frames.
+        /// This will be executed in all frames, similar to Update from MonoBehaviour.
         /// </summary>
         protected override void OnUpdate()
         {

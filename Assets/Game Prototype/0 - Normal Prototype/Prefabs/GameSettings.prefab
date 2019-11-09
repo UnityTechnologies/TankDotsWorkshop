@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 6.299988, y: 16.700012}
+  m_AnchoredPosition: {x: 6.2999268, y: 16.700012}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &196506102
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScore: 0
-  enemiesToSpawn: 10
   scorePerEnemy: 1
   uiScoreText: {fileID: 1136080256}
   playerTransform: {fileID: 0}
   playerMaxLife: 100
   sfxCollectHealth: {fileID: 3122853565181987241}
+  enemyCollisionRadius: 1

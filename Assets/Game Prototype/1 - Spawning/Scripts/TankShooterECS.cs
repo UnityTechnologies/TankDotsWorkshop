@@ -5,6 +5,10 @@ using Unity.Collections;
 
 namespace Workshop.TankGame
 {
+    /// <summary>
+    /// Our Tank Shooter script, but now instantiating Entities instead of MonoBehaviour objects.
+    /// Remember to turn useECS to use it running with ECS.
+    /// </summary>
     public class TankShooterECS : MonoBehaviour
     {
         [Header("ECS MECHANICS")]

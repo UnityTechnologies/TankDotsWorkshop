@@ -5,12 +5,15 @@ namespace Workshop.TankGame
 {
     [DisallowMultipleComponent]
     [RequiresEntityConversion]
-    public class EnemyTagAuthoring : MonoBehaviour, IConvertGameObjectToEntity
+    public class HealthAuthoring : MonoBehaviour, IConvertGameObjectToEntity
     {
+        public float healthAmount = 100;
+
         // =============================================================================================================
         public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {
-            dstManager.AddComponent(entity, typeof(EnemyTag));
+            Health health = new Health() { lifePoints = healthAmount};
+            dstManager.AddComponentData(entity, health);
         }
         // =============================================================================================================
     }

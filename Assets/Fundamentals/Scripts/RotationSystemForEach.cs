@@ -14,7 +14,7 @@ namespace Workshop.Fundamentals
     // UNCOMMENT for exercise 5 and 6
     //
     // But what is DisableAutoCreation:
-    // - Prevents systems from automatically being instantiated for a default world:
+    // - Prevents systems from automatically being instantiated for a default world (or controlled by ECS):
     // - https://docs.unity3d.com/Packages/com.unity.entities@0.1/api/Unity.Entities.DisableAutoCreationAttribute.html
     // - Systems marked as [DisableAutoCreation] can be created manually, updated manually (by calling
     // MySystem.Update()), and even manually added to a ComponentSystemGroup's update list (in which case they will be
@@ -36,7 +36,7 @@ namespace Workshop.Fundamentals
         }
         // =============================================================================================================
         /// <summary>
-        /// This will be executed in all frames.
+        /// This will be executed in all frames, similar to Update from MonoBehaviour.
         /// </summary>
         protected override void OnUpdate()
         {

@@ -43,6 +43,11 @@
               <e p="TankShooterECS.cs" t="Include" />
             </e>
           </e>
+          <e p="10 - EXTRAS" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CollisionSystemChunks.cs" t="Include" />
+            </e>
+          </e>
           <e p="2 - Movement" t="Include">
             <e p="Scripts" t="Include">
               <e p="MoveForwardAuthoring.cs" t="Include" />
@@ -57,6 +62,42 @@
               <e p="EnemyTagAuthoring.cs" t="Include" />
               <e p="EnemyTagComponent.cs" t="Include" />
               <e p="TurnTowardsPlayerSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="4 - Timed Destroy" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="TimedDestroySystem.cs" t="Include" />
+              <e p="TimeToLiveAuthoring.cs" t="Include" />
+              <e p="TimeToLiveComponent.cs" t="Include" />
+            </e>
+          </e>
+          <e p="5 - Player Position Sync" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="PlayerTagAuthoring.cs" t="Include" />
+              <e p="PlayerTagComponent.cs" t="Include" />
+              <e p="PlayerTransformUpdateSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="6 - Health System" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="HealthAuthoring.cs" t="Include" />
+              <e p="HealthComponent.cs" t="Include" />
+              <e p="RemoveDeadSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="7 - Player Damage" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CollisionSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="8 - Enemies Damage" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CollisionSystemTwoQueries.cs" t="Include" />
+            </e>
+          </e>
+          <e p="9 - Shell Bullet Damage" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CollisionSystemFinal.cs" t="Include" />
             </e>
           </e>
         </e>

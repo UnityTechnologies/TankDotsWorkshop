@@ -22,7 +22,7 @@ namespace Workshop.TankGame
         /// </summary>
         /// <param name="entity">Entity to be created for us.</param>
         /// <param name="dstManager">Our entity manager to work with ECS.</param>
-        /// <param name="conversionSystem">Not using that for now, used for more advanced stuff.</param>
+        /// <param name="conversionSystem">Not using this for now, used for more advanced stuff.</param>
         public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {
             //We simply copy our Editor speed to our Component speed.

@@ -51,7 +51,6 @@ namespace Workshop.TankGame
 			m_ImpactPool[m_CurrentPoolIndex].transform.position = position;
 			m_ImpactPool[m_CurrentPoolIndex].SetActive(true);
 		}
-
 		// =============================================================================================================
 	}
 }

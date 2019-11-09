@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Workshop.TankGame
 {
     /// <summary>
-    /// Spawn our enemies in the scene, now changing to ECS.
+    /// Spawn our enemies in the scene, now changing the spawn option to ECS.
     /// </summary>
     public class EnemySpawnerECS : MonoBehaviour
     {
