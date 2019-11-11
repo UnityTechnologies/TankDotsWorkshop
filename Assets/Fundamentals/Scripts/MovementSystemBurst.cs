@@ -11,14 +11,15 @@ namespace Workshop.Fundamentals
 {
     [DisableAutoCreation]
     // ENABLE for exercise 5 and back
-    // DISABLE for exercise 6
+    // DISABLE for exercise 6 and for our game prototype
     public class MovementSystemBurst : JobComponentSystem
     {
         // =============================================================================================================
         protected override void OnCreate()
         {
             //Dirty Hack for simplifying this samples
-            Enabled = SceneManager.GetActiveScene().name.Contains("6");
+            Enabled = SceneManager.GetActiveScene().name.Contains("6") || SceneManager.GetActiveScene().name.Contains("10");
+            //Exercise 10 is for our game prototype
         }
         // =============================================================================================================
         [BurstCompile]

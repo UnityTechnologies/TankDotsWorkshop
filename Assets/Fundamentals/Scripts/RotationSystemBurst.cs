@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 namespace Workshop.Fundamentals
 {
     [DisableAutoCreation]
-    // COMMENT for exercise 6 ONLY
+    // COMMENT for exercise 6 and our game prototype ONLY
     // UNCOMMENT for all other exercises
     public class RotationSystemBurst : JobComponentSystem
     {
@@ -18,7 +18,8 @@ namespace Workshop.Fundamentals
         protected override void OnCreate()
         {
             //Dirty Hack for simplifying this samples
-            Enabled = SceneManager.GetActiveScene().name.Contains("6");
+            Enabled = SceneManager.GetActiveScene().name.Contains("6") || SceneManager.GetActiveScene().name.Contains("10");
+            //Exercise 10 is for our game prototype
         }
         // =============================================================================================================
         [BurstCompile]

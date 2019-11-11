@@ -7,14 +7,15 @@ namespace Workshop.TankGame
 {
 	/// <summary>
 	/// We could have done this using Jobs, but we wanted to let you know how to use "HasComponent".
+	/// Also, this one is an update on the RemoveDeadSystem script, but with our final implementations.
 	/// </summary>
-	public class RemoveDeadSystem : ComponentSystem
+	public class RemoveDeadSystemExtra : ComponentSystem
 	{
 		// =============================================================================================================
 		protected override void OnCreate()
 		{
-			//If it is in our final scene, ignore.
-			Enabled = !SceneManager.GetActiveScene().name.Contains("10");
+			//Dirty hack to work with our samples. This one to work on scene 10 only.
+			Enabled = SceneManager.GetActiveScene().name.Contains("10");
 		}
 		// =============================================================================================================
 		protected override void OnUpdate()
@@ -32,9 +33,23 @@ namespace Workshop.TankGame
 					else if (EntityManager.HasComponent(entity, typeof(EnemyTag)))
 					{
 						PostUpdateCommands.DestroyEntity(entity);
-						Debug.Log("Destroyed entity.");
+						Debug.Log("Destroyed ENEMY entity.");
 						BulletImpactPool.Instance.PlayBulletImpact(pos.Value);
+						//Let's spawn our life cube.
+						LifeCubeSpawner.Instance.SpawnLifeCubeECS(pos.Value);
+						//If we destroyed an enemy, let's add score to the player
+						GameSettings.Instance.AddScore();
 					}
+				}
+			});
+			// Same as above, but for HealthCollect (to destroy the life cubes near the player).
+			Entities.ForEach((Entity entity, ref HealthCollect healthCollector, ref Translation pos) =>
+			{
+				if (healthCollector.collected)
+				{
+					GameSettings.Instance.PlayCollectAudio();
+					PostUpdateCommands.DestroyEntity(entity);
+					Debug.Log("Destroyed LifeCube Entity.");
 				}
 			});
 		}

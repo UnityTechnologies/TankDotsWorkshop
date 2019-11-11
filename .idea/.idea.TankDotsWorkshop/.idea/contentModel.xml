@@ -51,6 +51,7 @@
               <e p="LifeCubeAuthoring.cs" t="Include" />
               <e p="LifeCubeSpawner.cs" t="Include" />
               <e p="LifeCubeTag.cs" t="Include" />
+              <e p="RemoveDeadSystemExtra.cs" t="Include" />
               <e p="UpdatePlayerMbToECS.cs" t="Include" />
             </e>
           </e>

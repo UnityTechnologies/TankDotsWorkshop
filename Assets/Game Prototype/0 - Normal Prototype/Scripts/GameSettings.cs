@@ -177,6 +177,14 @@ namespace Workshop.TankGame
             playerCurrentLife = amount;
         }
         // =============================================================================================================
+        /// <summary>
+        /// This could be used for our normal gameplay, but we will use to play the sfx when calling from ECS.
+        /// </summary>
+        public void PlayCollectAudio()
+        {
+            sfxCollectHealth.Play();
+        }
+        // =============================================================================================================
 
         #endregion
 
