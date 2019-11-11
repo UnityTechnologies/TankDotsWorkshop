@@ -52,6 +52,7 @@ namespace Workshop.TankGame
 			// When creating an EntityCommandBuffer for a Job, we need to pass that job’s handle to the Buffer System.
 			// That ensures that the system knows which jobs need to be completed before executing the commands.
 			var system = World.Active.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
+			
 			// We schedule the job and then execute it in a safe order.
 			var handle = job.Schedule(this, inputDeps);
 			system.AddJobHandleForProducer(handle);

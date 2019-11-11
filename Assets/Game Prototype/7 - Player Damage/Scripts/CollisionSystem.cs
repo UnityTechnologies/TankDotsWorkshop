@@ -22,6 +22,9 @@ namespace Workshop.TankGame
 			//Dirty Hack for simplifying this samples - we want this to work only in this scene.
 			Enabled = SceneManager.GetActiveScene().name.Contains("7");
 			//Let's create a query filter to access a specific group of entities.
+			//We can execute a Query manually.
+			//We can get all entities that comply it.
+			//We can also get specifics components that comply to it.
 			enemyGroup = GetEntityQuery(typeof(Health), ComponentType.ReadOnly<Translation>(),
 				ComponentType.ReadOnly<EnemyTag>());
 		}
@@ -59,7 +62,7 @@ namespace Workshop.TankGame
 		}
 		// =============================================================================================================
 		/// <summary>
-		/// This is our custom collision calculation. We will do it for all bullets, for all enemies and players.
+		/// This is our custom collision calculation. We will do it for all entities that has the job requirements.
 		/// It does not matter if it is really near of not, it will calculate.
 		/// That's why is not good to use it in a final game.
 		/// </summary>

@@ -1,5 +1,6 @@
 ﻿using Unity.Entities;
 using Unity.Transforms;
+using UnityEngine.SceneManagement;
 
 namespace Workshop.TankGame
 {
@@ -11,9 +12,11 @@ namespace Workshop.TankGame
 		// =============================================================================================================
 		protected override void OnUpdate()
 		{
-			//Enable this when in Exercise 5 for our tank game, so we dont get errors before that.
-//			if (GameSettings.Instance.IsPlayerDead)
-//				return;
+			if (GameSettings.Instance == null)
+				return;
+			
+			if (GameSettings.Instance.IsPlayerDead)
+				return;
 			
 			//Set our ECS position the same as our GO position
 			Entities.WithAll<PlayerTag>().ForEach((ref Translation pos) =>

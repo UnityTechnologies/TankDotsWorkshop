@@ -33,14 +33,11 @@ namespace Workshop.TankGame
         [SerializeField] private Transform playerTransform;
         [Tooltip("Max player's life.")]
         [SerializeField] private float playerMaxLife = 100;
+        [Tooltip("Current player's life.")]
+        [SerializeField] private float playerCurrentLife;
 
-        [Header("PLAYER INFORMATION")]
+        [Header("AUDIO")]
         public AudioSource sfxCollectHealth;
-        
-        /// <summary>
-        /// Current player's life.
-        /// </summary>
-        private float m_PlayerCurrentLife;
 
         /// <summary>
         /// Action to be called when the player dies, so we can deal with different behaviours.
@@ -56,12 +53,12 @@ namespace Workshop.TankGame
         /// <summary>
         /// If player's life is equal or below zero, he/she is dead.
         /// </summary>
-        public float PlayerCurrentHealth => m_PlayerCurrentLife;
+        public float PlayerCurrentHealth => playerCurrentLife;
         // =============================================================================================================
         /// <summary>
         /// If player's life is equal or below zero, he/she is dead.
         /// </summary>
-        public bool IsPlayerDead => m_PlayerCurrentLife <= 0;
+        public bool IsPlayerDead => playerCurrentLife <= 0;
         // =============================================================================================================
         /// <summary>
         /// Get current player position.
@@ -82,26 +79,27 @@ namespace Workshop.TankGame
         {
             playerScore = 0;
             uiScoreText.text = playerScore.ToString();
-            m_PlayerCurrentLife = playerMaxLife;
+            playerCurrentLife = playerMaxLife;
         }
         // =============================================================================================================
         /// <summary>
         /// Call it when the player takes a damage from an enemy or something.
         /// Also can be used to restore Health.
+        /// This one will work only with our normal MB game, because for ECS later we will use different calls.
         /// </summary>
         public void PlayerDamage(float dmgAmount)
         {
-            if (m_PlayerCurrentLife <= 0)
+            if (playerCurrentLife <= 0)
                 return;
             //Play something different then dmg, for collecting health
             if (dmgAmount < 0)
                 sfxCollectHealth.Play();
             //Take dmg
-            m_PlayerCurrentLife -= dmgAmount;
-            if (m_PlayerCurrentLife > playerMaxLife)
-                m_PlayerCurrentLife = playerMaxLife;
+            playerCurrentLife -= dmgAmount;
+            if (playerCurrentLife > playerMaxLife)
+                playerCurrentLife = playerMaxLife;
             //If player dies, lets warn all scripts that needs it.
-            if (m_PlayerCurrentLife <= 0)
+            if (playerCurrentLife <= 0)
             {
                 PlayerDied();
             }
@@ -109,10 +107,11 @@ namespace Workshop.TankGame
         // =============================================================================================================
         /// <summary>
         /// Kills our player and lets everyone know it.
+        /// It will work for our normal MB game, but also later to work with our ECS game play.
         /// </summary>
         public void PlayerDied()
         {
-            m_PlayerCurrentLife = 0;
+            playerCurrentLife = 0;
             onPlayerDied?.Invoke();
         }
         // =============================================================================================================
@@ -147,6 +146,10 @@ namespace Workshop.TankGame
         [SerializeField] private float enemyCollisionRadius = .7f;
         [Tooltip("Our player radius to be used in our custom Collision system. Will be used for ECS only.")]
         [SerializeField] private float playerCollisionRadius = .5f;
+//        [Tooltip("Our health collect radius to be used in our custom Collision system. Will be used for ECS only.")]
+//        [SerializeField] private float lifeCubeCollisionRadius = .5f;
+        [Tooltip("How many health should we restore? Will be used for ECS only.")]
+        [SerializeField] private float lifeCubeRestoreAmount = 10f;
         
         // =============================================================================================================
         /// <summary>
@@ -158,6 +161,21 @@ namespace Workshop.TankGame
         /// Get our collision radius for our player.
         /// </summary>
         public float PlayerCollisionRadius => playerCollisionRadius;
+        // =============================================================================================================
+        /// <summary>
+        /// How many health should we restore?
+        /// </summary>
+        public float LifeCubeRestoreAmount => lifeCubeRestoreAmount;
+        // =============================================================================================================
+        /// <summary>
+        /// We will use this with our ECS calls, to update our normal player MB data here.
+        /// This is an example, you could do this in many different ways.
+        /// </summary>
+        /// <param name="amount"></param>
+        public void UpdatePlayerCurrentHealth(float amount)
+        {
+            playerCurrentLife = amount;
+        }
         // =============================================================================================================
 
         #endregion

@@ -16,17 +16,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTagComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankBulletBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionSystemGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTransformUpdateSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/PlayerUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/TankController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/8 - Enemies Damage/Scripts/CollisionSystemTwoQueries.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/HealthCollectAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTagAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/HealthCollectComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/EnemySpawnerECS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/LifeCubeAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/TankShooterECS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/EnemyTagAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,11 +37,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/HealthCubeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.1.1-preview/Unity.Entities/Stubs/Unity/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/LifeCubeTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/RemoveDeadSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionHealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemForEach.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemBurst.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementVelocity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/UpdatePlayerMbToECS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemJobs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimeToLiveAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimeToLiveComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/BulletImpactPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimedDestroySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemForEach.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/LifeCubeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationVelocityAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/7 - Player Damage/Scripts/CollisionSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,13 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/0 - Fundamentals/Scripts/CubeMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/LookAtCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/GameSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/TankBulletBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/TankController.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/TankShooter.cs" />
-        <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/BulletImpactPool.cs" />
         <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/0 - Normal Prototype/Scripts/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/1 - Spawning/Scripts/TankShooterECS.cs" />
@@ -84,20 +84,11 @@
         <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTagAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/BulletImpactPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/RemoveDeadSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimedDestroySystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/7 - Player Damage/Scripts/CollisionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/8 - Enemies Damage/Scripts/CollisionSystemTwoQueries.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - EXTRAS/Scripts/CollisionSystemChunks.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/HealthAuthoring.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/9 - Shell Bullet Damage/Scripts/CollisionSystemFinal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionSystemGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementSystemBurst.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTransformUpdateSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemJobs.cs" />
         <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/RotationSystemForEach.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/GameSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/TankShooterECS.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/1 - Spawning/Scripts/EnemySpawnerECS.cs" />
         <option value="$PROJECT_DIR$/Assets/Fundamentals/Scripts/MovementVelocityAuthoring.cs" />
@@ -105,6 +96,22 @@
         <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveSpeedAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Game Prototype/2 - Movement/Scripts/MoveForwardAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/4 - Timed Destroy/Scripts/TimedDestroySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/3 - Rotating to Target/Scripts/TurnTowardsPlayerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/5 - Player Position Sync/Scripts/PlayerTransformUpdateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/7 - Player Damage/Scripts/CollisionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/8 - Enemies Damage/Scripts/CollisionSystemTwoQueries.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionSystemGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/LifeCubeSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/LifeCubeTag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/9 - Shell Bullet Damage/Scripts/CollisionSystemFinal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/HealthCollectComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/HealthCollectAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/LifeCubeAuthoring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/CollisionHealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/6 - Health System/Scripts/RemoveDeadSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/0 - Normal Prototype/Scripts/GameSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game Prototype/10 - Implementations/Scripts/UpdatePlayerMbToECS.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +121,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="ParameterNameHintsOptionsId" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,6 +166,11 @@
       <workItem from="1573235510809" duration="5870000" />
       <workItem from="1573255047388" duration="13781000" />
       <workItem from="1573305980975" duration="6305000" />
+      <workItem from="1573324826789" duration="2151000" />
+      <workItem from="1573327397886" duration="1273000" />
+      <workItem from="1573397632621" duration="632000" />
+      <workItem from="1573400093205" duration="5802000" />
+      <workItem from="1573435289440" duration="1966000" />
     </task>
     <servers />
   </component>

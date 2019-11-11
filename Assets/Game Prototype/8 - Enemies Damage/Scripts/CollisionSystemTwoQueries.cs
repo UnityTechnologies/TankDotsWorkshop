@@ -34,9 +34,14 @@ namespace Workshop.TankGame
         private struct CollisionJob : IJobForEach<Health, Translation>
         {
             public float radius;
+            
+            //DeallocateOnJobCompletion will automatically dispose our NativeArray for us, because we MUST do that.
+            //Remember that Unity sometimes generates dependencies automatically.
+            //That usually depends if the Components are ReadOnly/ReadWrite/etc.
+            //If we use NativeArrays with Components we must specify that also.
             [DeallocateOnJobCompletion, ReadOnly]
             public NativeArray<Translation> transToTestAgainst;
-
+            
             public void Execute(ref Health health, [ReadOnly] ref Translation pos)
             {
                 float damage = 0f;
@@ -44,9 +49,7 @@ namespace Workshop.TankGame
                 {
                     Translation pos2 = transToTestAgainst[j];
                     if (CheckCollision(pos.Value, pos2.Value, radius))
-                    {
                         damage += 1;
-                    }
                 }
                 if (damage > 0)
                     health.lifePoints -= damage;
@@ -57,8 +60,10 @@ namespace Workshop.TankGame
         {
             var jobEvB = new CollisionJob();
             jobEvB.radius = GameSettings.Instance.EnemyCollisionRadius;
+            //Allocator.TempJob - This changes how the memory is managed for that Array.
+            //Prepares it to be used in jobs.
             jobEvB.transToTestAgainst = enemyGroup.ToComponentDataArray<Translation>(Allocator.TempJob);
-            return jobEvB.Schedule(playerGroup, inputDependencies);
+            return jobEvB.Schedule(playerGroup, inputDependencies); //change here to enemyGroup and see what happens ;)
         }
         // =============================================================================================================
         private static bool CheckCollision(float3 posA, float3 posB, float radiusSqr)

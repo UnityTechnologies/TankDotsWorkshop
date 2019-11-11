@@ -656,4 +656,5 @@ MonoBehaviour:
   playerMaxLife: 100
   sfxCollectHealth: {fileID: 3122853565181987241}
   enemyCollisionRadius: 1
-  playerCollisionRadius: 0.2
+  playerCollisionRadius: 1
+  lifeCubeRestoreAmount: 10

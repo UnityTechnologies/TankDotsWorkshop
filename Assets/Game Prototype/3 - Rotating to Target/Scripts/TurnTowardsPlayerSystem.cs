@@ -4,6 +4,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
+using UnityEngine.SceneManagement;
 
 namespace Workshop.TankGame
 {
@@ -46,24 +47,21 @@ namespace Workshop.TankGame
 		/// <returns></returns>
 		protected override JobHandle OnUpdate(JobHandle inputDeps)
 		{
+			if (GameSettings.Instance == null)
+				return inputDeps;
+			
 			//We can access MonoBehaviour here, as you can see.
-			//Enable this when in Exercise 3 for our tank game, so we dont get errors before that.
-//			if (GameSettings.Instance.IsPlayerDead)
-//				return inputDeps;
+			if (GameSettings.Instance.IsPlayerDead)
+				return inputDeps;
 
 			//Create a new Job, set a value that our query needs and execute what we want.
-			//Enable this when in Exercise 3 for our tank game, so we dont get errors before that.
-//			var job = new TurnJob
-//			{
-//				playerPosition = GameSettings.Instance.PlayerPosition
-//			};
+			var job = new TurnJob
+			{
+				playerPosition = GameSettings.Instance.PlayerPosition
+			};
 
-			//Enable this when in Exercise 3 for our tank game, so we dont get errors before that.
 			//Add to our job schedule and we are set.
-//			return job.Schedule(this, inputDeps);
-
-			//ERASE THE LINE BELOW when in Exercise 5 for our tank game and enable all lines above.
-			return inputDeps;
+			return job.Schedule(this, inputDeps);
 		}
 		// =============================================================================================================
 	}
