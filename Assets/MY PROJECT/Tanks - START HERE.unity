@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 153375113}
-  - component: {fileID: 6827180450359489961}
+  - component: {fileID: 153375114}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -157,6 +157,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &153375114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153375112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28d12dc945125c49b477c6964fba9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useECS: 1
+  spawnEnemies: 1
+  enemySpawnRadius: 10
+  enemyPrefab: {fileID: 1588355122896168672, guid: b3e4b7a6d5f972c40963bc70d1e248e6,
+    type: 3}
+  spawnsPerInterval: 8
+  spawnInterval: 1
 --- !u!23 &650371409
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -359,7 +378,7 @@ GameObject:
   - component: {fileID: 652312102}
   - component: {fileID: 652312098}
   - component: {fileID: 4705020263559233145}
-  - component: {fileID: 2328139632938415619}
+  - component: {fileID: 652312104}
   m_Layer: 0
   m_Name: PlayerTank-MB
   m_TagString: Player
@@ -474,6 +493,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &652312104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652312097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14373ea69e10d0f428667a867c7d7c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useECS: 1
+  tankBarrel: {fileID: 7670934657847582852}
+  shotVfx: {fileID: 4533261323218238276}
+  fireRate: 0.1
+  spreadAmount: 20
+  bulletPrefab: {fileID: 8537258114738146544, guid: b9face26167960c4eb77320cbfebc3ce,
+    type: 3}
+  shotAudio: {fileID: 7670934657293895152}
 --- !u!1 &652312105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,25 +1248,6 @@ Transform:
   m_Father: {fileID: 652665793}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2328139632938415619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652312097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b97e172966b01409c6a1bb82cef843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankBarrel: {fileID: 7670934657847582852}
-  shotVfx: {fileID: 4533261323218238276}
-  fireRate: 0.1
-  spreadAmount: 20
-  bulletPrefab: {fileID: 8537258114738146544, guid: b9face26167960c4eb77320cbfebc3ce,
-    type: 3}
-  shotAudio: {fileID: 7670934657293895152}
 --- !u!82 &2533123006294007950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10981,11 +11001,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6711296594785856037, guid: 1419adf6a6ec6604f9b44a62ca1e99ec,
-        type: 3}
-      propertyPath: m_Name
-      value: Environment
-      objectReference: {fileID: 0}
     - target: {fileID: 6711296594785469067, guid: 1419adf6a6ec6604f9b44a62ca1e99ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11041,26 +11056,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6711296594785856037, guid: 1419adf6a6ec6604f9b44a62ca1e99ec,
+        type: 3}
+      propertyPath: m_Name
+      value: Environment
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1419adf6a6ec6604f9b44a62ca1e99ec, type: 3}
---- !u!114 &6827180450359489961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153375112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ec2f9e589d62f488574408b86aa4c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnEnemies: 1
-  enemySpawnRadius: 100
-  enemyPrefab: {fileID: 1588355122896168672, guid: b3e4b7a6d5f972c40963bc70d1e248e6,
-    type: 3}
-  spawnsPerInterval: 10
-  spawnInterval: 1
 --- !u!1 &6981602742596033783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11084,10 +11086,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7027323436680247642, guid: 72693c917d48c214e95643ec1af6d821,
-        type: 3}
-      propertyPath: m_Name
-      value: GameSettings
+    - target: {fileID: 196506100, guid: 72693c917d48c214e95643ec1af6d821, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.300049
       objectReference: {fileID: 0}
     - target: {fileID: 7027323436680247640, guid: 72693c917d48c214e95643ec1af6d821,
         type: 3}
@@ -11144,15 +11145,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7027323436680247642, guid: 72693c917d48c214e95643ec1af6d821,
+        type: 3}
+      propertyPath: m_Name
+      value: GameSettings
+      objectReference: {fileID: 0}
     - target: {fileID: 7027323436680247643, guid: 72693c917d48c214e95643ec1af6d821,
         type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 652665793}
-    - target: {fileID: 196506100, guid: 72693c917d48c214e95643ec1af6d821, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 6.300049
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72693c917d48c214e95643ec1af6d821, type: 3}
 --- !u!222 &7670934657157498505
